@@ -8,9 +8,6 @@
 .sideBar{
   position: fixed;
   height: 100%;
-  width: 300px;
-  
-  
 }
 
 .face{
@@ -48,14 +45,6 @@ font-weight: 100;
   position: absolute;
   right: 25em; 
 
-}
-.brand{
-  position: absolute;
-  color: #fff;
-  display: inline-block;
-  font-size: 2.1rem;
-  padding: 0;
-  white-space: nowrap;
 }
 .nameSmall{
   font-weight: 100;
