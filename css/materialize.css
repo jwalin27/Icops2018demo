@@ -3430,7 +3430,7 @@ input[type=range] + .thumb {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1150px;
   width: 90%;
   
 }
@@ -4254,11 +4254,11 @@ nav .input-field label.active {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
+    height: 260px;
     line-height: 64px;
   }
   .navbar-fixed {
-    height: 64px;
+    height: 200px;
   }
 }
 
@@ -4900,7 +4900,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #0d47a1;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
