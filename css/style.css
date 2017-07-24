@@ -55,13 +55,13 @@ font-weight: 100;
   font-size: 1.5em;
 }
 a{
-  color: inherit;
+  color: #000000;
 }
 a:visited{
-  text-decoration: none;
+  text-decoration: #000000;
 }
 a:hover{
-  text-decoration: none;
+  text-decoration: #000000;
 }
 .email{
   margin-left: 0;
