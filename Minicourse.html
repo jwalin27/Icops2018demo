@@ -15,16 +15,65 @@
 table {
     border-collapse: collapse;
 }
-
 table, td, th {
     border: 1px solid #0d47a1;
 }
 
     </style>
+            <style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #40c4ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #ffffff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 5px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ICOPS 2018 </title>
     <link rel="icon" href="Pics/ICOPS 2018 Logo 1000.jpg" type="image/jpg" sizes="32x32">
+    
     
   </head>
   <body  background="amber accent-1">
@@ -35,43 +84,55 @@ table, td, th {
      
       <div class="navbar-fixed ">
       <nav>
+      <!--span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776;</span-->
         <div class="nav-wrapper ">
-            <!--div class="center-align "> <span class="text-white fontsforweb_fontid_13141 center-align brand-logo"> ICOPS 2018 </span></div-->
-            <table class="responsive-table hide-on-med-and-down">
-            <tr>
-              <th ><a href="IcopsHome.html"><center><img src ="Pics/Picture2.png" align="middle"></center></a></th>
-              <th><a href="Travelinfo.html"><h6 class="center-align black-text">Hotel/Travel</h6></a></th>
-              <th><a href="Organizers.html"><h6 class="center-align black-text">Organizers</h6></a></th>
-              <th><a href="Techcomm.html"><h6 class="center-align black-text">Technical Committee</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">International Committee</h6></a></th>
-            </tr>
-            <tr>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Submit Abstract</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Registration</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Visiting Denver</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Visa Info</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Exhibitor Info</h6></a></th>
-            </tr>
-            <tr>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Plenary Speakers</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Technical Program</h6></a></th>
-              <th bgcolor="#0d47a1"><a href="Minicourse.html"><h6 class="center-align white-text"><b>Mini Course</b></h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Special Sessions</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Awards &amp; Grants</h6></a></th>
-            </tr>
-            <tr>
-             <th><a href="Temp.html"><h6 class="center-align black-text">Presentation Guidelines</h6></a></th>
-             <th><a href="Temp.html"><h6 class="center-align black-text">Past/Future ICOPS</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Past Conference Publications</h6></a></th>
-              <th><a href="Temp.html"><h6 class="center-align black-text">Disclosures</h6></a></th>
-              <th><a href="Contact.html"><h6 class="center-align black-text">Contact</h6></a></th>
-            </tr>
-            </table>
+        <center><h4 class="blue-text text-light-blue-accent-2 center-align brand-logo"><b>ICOPS 2018</b></h4></center>
+
+       <div style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776;</div>
 
         </div>
-      </nav>
-      </div>
-      <br>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn right-align" onclick="closeNav()">&times;</a>
+  <a href="IcopsHome.html"><center><img src ="Pics/Picture2.png" align="middle"></center></a>
+ <a href="Travelinfo.html"><h6 class="center-align white-text"><b>Hotel/Travel</b></h6></a>
+ <a href="Organizers.html"><h6 class="center-align white-text"><b>Organizers</b></h6></a>
+ <a href="Techcomm.html"><h6 class="center-align white-text"><b>Technical Committee</b></h6></a>
+ <a href="Temp.html"><h6 class="center-align white-text"><b>International Committee</b></h6></a>
+ <a href="Temp.html"><h6 class="center-align white-text"><b>Submit Abstract</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Registration</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Visiting Denver</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Visa Info</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Exhibitor Info</b></h6></a>
+            
+<a href="Temp.html"><h6 class="center-align white-text"><b>Plenary Speakers</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Technical Program</b></h6></a>
+<a href="Minicourse.html"><h6 class="center-align white-text"><b>Mini Course</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Special Sessions</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Awards &amp; Grants</b></h6></a>
+            
+ <a href="Temp.html"><h6 class="center-align white-text"><b>Presentation Guidelines</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Past/Future ICOPS</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Past Conference Publications</b></h6></a>
+<a href="Temp.html"><h6 class="center-align white-text"><b>Disclosures</b></h6></a>
+<a href="Contact.html"><h6 class="center-align white-text"><b>Contact</b></h6></a>
+
+</div>
+</nav>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
       <h3 class="center-align black-text">Mini Course:</h3>
       <h4 class="center-align blue-text text-darken-4">New Directions in Plasma Diagnostics for <br> High Energy Density and Burning Plasmas </h4>
       <br>
@@ -80,7 +141,7 @@ table, td, th {
 
 
 
-<table>
+<table style="width:700px" align="center">
 <tr>
 <td><center>1</center></td>
 <td>Overview of ICF and HED Diagnostics:<br>
